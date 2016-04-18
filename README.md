@@ -46,6 +46,19 @@ https://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/
 5. View that files were correctly uploaded to MongoDB:
 		`db.businesses.find()`
 
+###Installation instructions for MongoMapper
+
+1. Install gemcutter:
+		`$ sudo gem install gemcutter --no-rdoc --no-ri`
+
+2. There is no need to tumble gemcutter because it does not need to be primary source.
+
+3. Now install MongoMapper
+		`$ sudo gem install mongo_mapper --no-rdoc --no-ri`
+
+4. Create the rails app in OwnLocalBackendProject:
+		`$ rails new BusAPI`
+
 
 
 

@@ -1,0 +1,14 @@
+#development environment
+development:
+   server: localhost
+   database: mydb
+
+#test environment
+test:
+   server: localhost
+   database: mydb-test
+
+#production environement
+production:
+   server: localhost
+   database: mydb-production
