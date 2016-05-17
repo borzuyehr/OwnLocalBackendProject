@@ -47,33 +47,47 @@ https://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/
 
 4. Add mongoid to gemfile
 	
-	'gem 'mongoid''
+	`gem 'mongoid'`
 
 5. Run bundle install
 
-	'bundle install'
+	`bundle install`
 
 6. Generate the mongoid config file
 
-	'rails g mongoid:config'
+	`rails g mongoid:config`
 
 7. Generate the scaffold structure
 
-	'rails g scaffold business name address'
+	`rails g scaffold business name address`
 
 8. Add pagination gem to gemfile
 
-	'gem 'will_paginate_mongoid''
+	`gem 'will_paginate_mongoid'`
 
 9. Run bundle install
 
-	'bundle install'
+	`bundle install`
 
 10. Start the Rails server
 
-	'rails server'
+	`rails server`
 
 11. Go to localhost:3000/businesses and you'll see all businesses paginated 50 per page 	sorted by _id.
+
+##Query for record based on _id
+
+1. Start the rails console to test query in the BusAPI directory
+
+	`rails c`
+
+2. Query for the business based on _id
+
+	`Business.where(:_id => 50).first`
+
+--The number in the above code can be replaced by any number between 0 and 49999.
+	If a number is not in this range, null is returned.
+
 
 These steps ensure that rails is installed and running correctly. Make sure Mongodb is running before starting the rails server.
 
